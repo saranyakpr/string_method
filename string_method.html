@@ -14,6 +14,7 @@
 	  // 1 string literal
 	  // 2 string object (new keyword)
 	  
+	 
 	  
 	  // 1 string literal
 	  
@@ -31,7 +32,7 @@
 	  // 1 charAt method
 	  
 	  let charA = 'saran';
-	  document.write(charA.charAt(0));
+	  document.write(charA.charAt(1));
 	  document.write('<br>');
 	  
 	  // 2 concat
@@ -58,14 +59,14 @@
 	  
 	  // 5 toLowerCase()
 	  
-	  let low = 'Javascript';
+	  let low = 'JAVASCRIPT';
 	  let low1 = low.toLowerCase();
 	  document.write(low1);
 	  document.write('<br>');
 	  
 	  // 6 toUpperCase()
 	  
-	  let up = 'JAVASCRIPT';
+	  let up = 'Javascript';
 	  let up1 = up.toUpperCase();
 	  document.write(up1);
 	  document.write('<br>');
@@ -79,7 +80,7 @@
 
       // 8 trim()
 	  
-	  let t = '  hi  ';
+	  let t = '  hi   saran     hi';
 	  let t1 = t.trim();
 	  document.write(t1);
 	  document.write('<br>');
@@ -94,7 +95,7 @@
 	  // 10 charCodeAt(unicode)
 	  
 	  let ca1 = 'javascript';
-	  document.write(ca1.charCodeAt(0));
+	  document.write(ca1.charCodeAt(1));
 	  document.write('<br>');
 	  
 	  // 11 search
@@ -106,7 +107,7 @@
 	  // 12 match
 	  
 	  let mat = 'saran';
-	  document.write(mat.match(/[a-n]/));
+	  document.write(mat.match(/o/));
 	  document.write('<br>');
 	  
 	  // 13 replace
@@ -124,7 +125,7 @@
 	  // 15 substring
 	  
 	  let ss = 'javascript';
-	  document.write(ss.substr(4,5));
+	  document.write(ss.substr(4,2));
 	  document.write('<br>');
 	  
 	  // 16 toLocalLowerCase()
@@ -132,6 +133,45 @@
 	  let ll = 'SARAN';
 	  document.write(ll.toLocaleLowerCase());
 	  document.write('<br>');
+	  
+	  // 17 padStart()(length,padstring)
+	  
+	  let pad = '003';
+	  document.write(pad.padStart(4,3));
+	  document.write('<br>');
+	  
+	  // 18 padEnd()(length,padstrings)
+	  
+	  let pad1 = 'saran';
+	  document.write(pad1.padEnd(7,"ya"));
+	  document.write('<br>');
+	  
+	  
+	  // 19 includes()
+	  
+	  let inc = 'javascript is a scripting language';
+	  let inc1 = 'is';
+	  document.write(inc.includes(inc1) ? 'is' : "isn't" );
+	  document.write('<br>');
+	  
+	  //20 startsWith()
+	  
+	  let strW = 'javascript is a scripting language';
+	  document.write(strW.startsWith("is",11));
+	  document.write('<br>');
+	  
+	  // 21 endsWith()
+	  
+	  let endW = 'javascript is a scripting language';
+	  document.write(endW.endsWith('language'));
+	  document.write('<br>');
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 	 
    </script>
 
